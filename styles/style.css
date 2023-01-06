@@ -1,0 +1,133 @@
+
+
+a {
+    text-decoration: none;
+    color:rgb(247, 0, 255);
+}
+
+h1 {
+    color: red;
+}
+
+p { overflow-wrap: break-word;
+    color: white;
+}
+table {border-collapse: collapse;}
+th,td {border: 1px solid #000; padding: 5px;}
+
+.sec {
+    background-color:rgb(4, 43, 21);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.site {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "article"
+        "footer"
+    ;
+
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:899px) and (min-width:501px) {
+
+    /* a {
+        display: none;
+    } */
+    .site {
+        width: 75%;
+
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+
+            "header"
+            "nav"
+            "article"
+            "footer"
+        ;
+
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+
+    /* a {
+        display: none;
+    } */
+    .site {
+        width: 350px;
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        
+
+            "header"
+            "nav"
+            "article"
+            "footer";
+
+    }
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* background-color:rgba(red, green, blue, 0.3); */
+    position: fixed;
+    width: 95%;  
+}
+
+nav a {
+    font-size: 30px;
+    color:red;
+    margin: 5px 20px;
+}
+
+
+.sec1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
+    color: white;
+
+    background-image: url(https://img.freepik.com/photos-gratuite/femmes-touristes-sont-heureuses-rafraichies-cascade_1150-5657.jpg?w=900&t=st=1671289638~exp=1671290238~hmac=64e56a1a6a28fed2b30a6f5153d5cfe9154c54738f222dd516bfa888ea4a631e);
+
+    background-size: cover;
+
+    min-height: 75vh;
+    
+
+}

@@ -5,42 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
+<body id="haut">
+
+    <div class="site">
+        <header>   
+
+        </header>
+        <nav >
+
+               
+                
+        </nav>
+     
+
+        <article>
+
+                <section>
+
+                    <a href="../index.html"> Aller à la page d'aceuil </a>
+
+                    <div> 
+                        <img src="../images/html_4.png" alt="CV" width="50px"> 
+                    </div>
+
+                    <h6><a href="#bas"> Bas de page  </a></h6>
+                </section>
+
+                <section class="sec">
+                    <h1>CV</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem beatae tempore, sequi voluptas labore ad praesentium a tenetur perferendis, recusandae tempora fugit saepe suscipit consequatur accusamus vitae non doloremque.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores mollitia tempora sunt, enim, suscipit facilis animi ipsam in amet fuga corrupti cum maiores. Est quaerat officia dignissimos explicabo, labore consequuntur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quia quam architecto. Dicta quas ipsa ex vitae <br>
+                    voluptatem necessitatibus commodi perferendis laudantium culpa, odit ab. Iusto similique mollitia pariatur numquam?</p>
+                </section>
+                <section class="sec1">
+                        <form method="post"  id="id_form" action="">
+
+                            <fieldset form="id_form">
+
+                                <legend> Completer votre prophil </legend>
+
+                                    <p> <label for="lien_cv">Votre_CV : </label> <input id="lien_cv" name="lien_cv" type="url" placeholder="inserer le lien de votre CV"> </p>
+
+                                    <p><label for="text_motiv">Votre text de motivation : </label></p>
+                                    
+                                    <textarea id="text_motiv" name="motivation" type="text" cols="30" rows="10" placeholder="En quelques lignes"></textarea>
+                                    
+                                    <p> 
+                                        <label for="init"> Effacer tous et recommencer : </label>
+                                        <input id="init"  type="reset">
+                                    </p> 
+                        
+                                    <p> 
+                                        <label for="envoi">Ou bien valider vos informations : </label>
+                                        <input id="envoi" name="valid_cv" type="submit" value="envoyer">
+                                    </p> 
+
+                            </fieldset>
+
+                        </form>   
+                </section>
     
-    <nav id="haut">
+        </article>
 
-        <div> 
-            <img src="../images/html_4.jpg" alt="CV"> 
-        </div>
+        <footer id="bas">
+            <h6><a href="#haut">Haut de page</a></h6>
+        </footer>
 
-        <h6><a href="#bas"> Bas de page  </a></h6>
-        
-        <a href="../index.html"> Aller à la page d'aceuil </a>
-        
-       
-    </nav>
-
-
-    <section>
-        <h1>CV</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem beatae tempore, sequi voluptas labore ad praesentium a tenetur perferendis, recusandae tempora fugit saepe suscipit consequatur accusamus vitae non doloremque.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores mollitia tempora sunt, enim, suscipit facilis animi ipsam in amet fuga corrupti cum maiores. Est quaerat officia dignissimos explicabo, labore consequuntur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quia quam architecto. Dicta quas ipsa ex vitae <br>
-        voluptatem necessitatibus commodi perferendis laudantium culpa, odit ab. Iusto similique mollitia pariatur numquam?</p>
-    </section>
-    <section>
-        <input type="url" placeholder="inserer le lien de votre CV">
-        <input type="submit">
-        <div>
-            <textarea name="motivation" id="" cols="30" rows="10" placeholder="votre motivation"></textarea>
-        </div>
-        
-    </section>
-    
-
-
-    <footer id="bas">
-         <h6><a href="#haut">Haut de page</a></h6>
-    </footer>
+    </div>
     
 </body>
 </html>
